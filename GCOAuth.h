@@ -57,6 +57,11 @@
  */
 + (void)setHTTPShouldHandleCookies:(BOOL)handle;
 
+
++ (NSString *)nonce;
++ (NSString *)timeStamp;
++ (NSString *)queryStringFromParameters:(NSDictionary *)parameters;
+
 /**
  Creates and returns a URL request that will perform an HTTP operation for the given method. All
  of the appropriate fields will be parameter encoded as necessary so do not
